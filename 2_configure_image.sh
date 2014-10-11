@@ -17,7 +17,13 @@ hostname -v yunohost
 # Delete Ajenti and his repo
 sudo apt-get remove ajenti
 # /etc/apt/sources.list
-# YunoHost install
+
+# Quit SSH connection
+exit
+# Connect SSH with root
+ssh root@IP
+
+# Install YunoHost
 sudo apt-get install git
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 cd /tmp/install_script && sudo ./install_yunohostv2
@@ -26,7 +32,7 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 # Delete SSH keys
 rm -f /etc/ssh/ssh_host_*
 
-# Add SSH key regenerate at boot script
+# Add script for regenerate SSH key regenerate at boot
 echo "#!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          Generates new ssh host keys on first boot
@@ -52,6 +58,6 @@ apt-get install cubian-update && cubian-update
 # Delete logs
 rm -rf /var/log/*
 apt-get --purge clean
-#Turn off cubieboard
+# Turn off cubieboard
 halt
 
