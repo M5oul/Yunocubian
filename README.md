@@ -1,4 +1,8 @@
 Yunocubian
 ==========
 
-Creation YunoHost image for cubieboard 1 and 2
+Creation YunoHost image scripts for cubieboard 1 and 2
+
+* http://yunohost.org/
+
+* http://cubian.org/
