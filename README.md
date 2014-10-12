@@ -1,12 +1,12 @@
 Yunocubian
 ==========
 
-Creation of YunoHost image for cubieboard 1 and 2 with scripts
+**Creation of YunoHost image for cubieboard 1 and 2 with scripts**
 
-* http://cubian.org/
+* [YunoHost web site](https://yunohost.org/)
 
-* https://yunohost.org/
+* [Cubian web site](http://cubian.org/)
 
-Find help on: https://yunohost.org/#/install_on_cubieboard
+* [Find help here](https://yunohost.org/#/install_on_cubieboard)
 
 **/!\ Do not execute script, read it. /!\**
