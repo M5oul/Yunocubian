@@ -1,7 +1,7 @@
 Yunocubian
 ==========
 
-Creation YunoHost image scripts for cubieboard 1 and 2
+Creation of YunoHost image for cubieboard 1 and 2 with scripts
 
 * http://cubian.org/
 
@@ -9,4 +9,4 @@ Creation YunoHost image scripts for cubieboard 1 and 2
 
 Find help on: https://yunohost.org/#/install_on_cubieboard
 
-/!\ Do not execute script, read it. /!\
+**/!\ Do not execute script, read it. /!\**
