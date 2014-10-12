@@ -1,7 +1,7 @@
-Yunocubian
+YunoHost for Cubieboard 1 & 2
 ==========
 
-**Creation of YunoHost image for cubieboard 1 and 2 with scripts**
+**Creation of YunoHost image for cubieboard 1 and 2 with scripts, based on Cubian**
 
 * [YunoHost web site](https://yunohost.org/)
 
