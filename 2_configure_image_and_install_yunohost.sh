@@ -9,6 +9,10 @@ ssh -p 36000 cubie@IP
 # Become root | password = "cubie"
 sudo -i
 
+# Add Swap partition to mount point
+nano /etc/fstab
+UUID=9b75a954-5145-4ba0-a911-4a333c36226e      /swap     ext4        defaults        0       2
+
 # Delete Ajenti and his repo
 apt-get remove ajenti
 nano /etc/apt/sources.list
@@ -25,17 +29,19 @@ hostname -v YunoHost
 # Change rood password to "yunohost"
 passwd root
 
-# Install YunoHost
+# Install YunoHost (17 min with CB2)
 git clone https://github.com/YunoHost/install_script /tmp/install_script
+# Try a second time if failed
 cd /tmp/install_script && sudo ./install_yunohostv2
 # Do not proceed to postinstallation
 
-# Move port 3600 to 22 by commenting line "Port 36000"
+# Replace port 3600 to 22 by line "Port 36000" -> "Port 22"
 # Permit ssh connection with root by switching: PermitRootLogin to "yes"
 nano /etc/ssh/sshd_config
 
 # Quit root and SSH connection
-exit && exit
+exit
+exit
 
 # Try SSH connection with root
 ssh root@IP
