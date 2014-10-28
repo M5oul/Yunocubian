@@ -78,8 +78,8 @@ insserv /etc/init.d/ssh_gen_host_keys
 userdel cubie
 
 # Delete logs
-rm -f /var/log/*
-# find /var/log -type f -exec rm {} \;
+find /var/log -type f -exec rm {} \;
+# rm -f /var/log/*
 apt-get --purge clean
 
 # Turn off cubieboard
