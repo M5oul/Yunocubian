@@ -79,8 +79,8 @@ userdel cubie
 
 # Delete logs
 rm -f /var/log/*
+# find /var/log -type f -exec rm {} \;
 apt-get --purge clean
 
 # Turn off cubieboard
 halt
-
