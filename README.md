@@ -12,3 +12,7 @@ YunoHost for Cubieboard 1 & 2
 **/!\ Do not execute script, read it. /!\**
 
 * Make a donation: <a href="https://flattr.com/submit/auto?user_id=M5oul&url=https%3A%2F%2Fgithub.com%2FM5oul%2FYunocubian" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
+
+To do :
+
+* Launch script at boot witch enlarge image to max size of the SD card: use Cubian script
