@@ -17,6 +17,11 @@ sudo dd bs=1M if=yunohost-cubieboard-a20-2014-10-14.img of=/dev/sdd
 
 # If everything is all right, go next
 
+# Fill in the empty part of the file system of zeros
+sfill
+
+# Use 7zip
+
 # Create a zip of the image to upload it
 zip yunohost-cubieboard-a20-2014-10-14.img.zip yunohost-cubieboard-a20-2014-10-14.img
 
